@@ -1,0 +1,23 @@
+# Secrets — never committed (Technical Bible Rule 1.1/1.2)
+.env
+.env.*
+!.env.example
+**/secrets.*
+
+# Flutter / Dart
+app/.dart_tool/
+app/build/
+app/.flutter-plugins*
+app/.packages
+app/ios/Pods/
+app/android/.gradle/
+app/*.iml
+
+# Supabase local
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
