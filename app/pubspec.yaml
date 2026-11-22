@@ -13,6 +13,7 @@ dependencies:
   go_router: ^14.2.0
   dio: ^5.5.0
   supabase_flutter: ^2.5.6
+  supabase: ^2.0.0 # pure-Dart client used only by integration/rls_isolation_check.dart
 
 dev_dependencies:
   flutter_test:

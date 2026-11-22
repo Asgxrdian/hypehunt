@@ -19,15 +19,16 @@ Future<void> main() async {
   runApp(const ProviderScope(child: HyperHuntApp()));
 }
 
-class HyperHuntApp extends StatelessWidget {
+class HyperHuntApp extends ConsumerWidget {
   const HyperHuntApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider);
     return MaterialApp.router(
       title: 'HyperHunt',
       theme: buildHyperTheme(),
-      routerConfig: appRouter,
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
   }
